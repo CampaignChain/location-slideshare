@@ -1,0 +1,6 @@
+
+modules:
+    campaignchain-slideshare-user:
+        display_name: SlideShare
+        description: Holds information about a SlideShare user
+        hooks:

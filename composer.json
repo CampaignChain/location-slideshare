@@ -1,0 +1,33 @@
+{
+    "name": "campaignchain/location-slideshare",
+    "description": "Holds information about a SlideShare user",
+    "type": "campaignchain-location",
+    "license": "Apache-2.0",
+    "homepage": "http://www.campaignchain.com",
+    "authors": [
+        {
+            "name": "Sandro Groganz",
+            "email": "sandro@campaignchain.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": { "CampaignChain\\Location\\SlideShareBundle\\": "" }
+    },
+    "extra": {
+        "campaignchain": {
+            "kernel": {
+                "classes": [
+                    "CampaignChain\\Location\\SlideShareBundle\\CampaignChainLocationSlideShareBundle"
+                ],
+                "routing":
+                {
+                    "name": "campaignchain_location_slideshare",
+                    "resource": "@CampaignChainLocationSlideShareBundle/Resources/config/routing.yml",
+                    "prefix": "/"
+                }
+            }
+        }
+    }
+}
