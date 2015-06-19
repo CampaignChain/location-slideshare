@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "campaignchain/channel-slideshare": "dev-master"
     },
     "autoload": {
         "psr-4": { "CampaignChain\\Location\\SlideShareBundle\\": "" }
