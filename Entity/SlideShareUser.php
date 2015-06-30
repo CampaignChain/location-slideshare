@@ -26,7 +26,7 @@ class SlideShareUser
     protected $id;
 
     /**
-     * @ORM\OneToOne(targetEntity="CampaignChain\CoreBundle\Entity\Location")
+     * @ORM\OneToOne(targetEntity="CampaignChain\CoreBundle\Entity\Location", cascade={"persist"})
      */
     protected $location;
 
@@ -59,7 +59,7 @@ class SlideShareUser
      * Set identifier
      *
      * @param string $identifier
-     * @return CitrixUser
+     * @return SlideShareUser
      */
     public function setIdentifier($identifier)
     {
@@ -126,7 +126,7 @@ class SlideShareUser
      * Set location
      *
      * @param \CampaignChain\CoreBundle\Entity\Location $location
-     * @return CitrixUser
+     * @return SlideShareUser
      */
     public function setLocation(\CampaignChain\CoreBundle\Entity\Location $location = null)
     {
