@@ -1,6 +1,7 @@
 {
     "name": "campaignchain/location-slideshare",
     "description": "Holds information about a SlideShare user",
+    "keywords": ["slideshare","campaignchain"],
     "type": "campaignchain-location",
     "license": "Apache-2.0",
     "homepage": "http://www.campaignchain.com",
