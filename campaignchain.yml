@@ -3,4 +3,6 @@ modules:
     campaignchain-slideshare-user:
         display_name: SlideShare
         description: Holds information about a SlideShare user
+        channels:
+            - campaignchain/channel-slideshare/campaignchain-slideshare
         hooks:
