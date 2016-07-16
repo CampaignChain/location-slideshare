@@ -17,8 +17,13 @@
 
 namespace CampaignChain\Location\SlideShareBundle;
 
+use CampaignChain\Location\SlideShareBundle\DependencyInjection\CampaignChainLocationSlideShareExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class CampaignChainLocationSlideShareBundle extends Bundle
 {
+    public function getContainerExtension()
+    {
+        return new CampaignChainLocationSlideShareExtension();
+    }
 }
